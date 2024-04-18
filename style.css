@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    background-color:#FFCE32;
+    
+}
+/*global css*/
+
+.obj-width{
+    max-width: 1500px;
+    margin : auto;
+}
+nav{
+    background-color: #FFCE32;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.3);
+
+}   
+.navBar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.navBar .logo{
+    color:#1D63FF;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 3.2rem;
+    font-weight: bold;
+   
+
+}
+#search-input{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    max-width: 250px;
+    box-shadow: 0 0 6px #00000031;
+}
+#search-button{
+    padding: 10px 20px;
+    background-color: #1D63FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 6px #00000031;
+    
+    
+}
+#search-button:hover{
+    
+    background-color: #10c0c0;
+
+}
+#container{
+   padding: 3rem ;
+   padding-right: 3rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: wrap;
+
+}
+.blog-card{
+    width: 300px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+}
+#container :hover{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+.blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.blog-card h2{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.blog-card p{  
+    color: black;
+    font-size: 1rem;
+    padding-top: 0.7rem;
+}
+
+@media (max-width : 500px){
+    nav{
+        padding: 0 20px;
+    }
+    .navBar .logo{
+        font-size: 1.2rem;
+    }
+    #search-input{
+        width: 150px;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    .blog-card{
+        width: 100%;
+    }
+    #search-button {
+        padding: 5px 10px;
+       
+        
+    }
+    
+}
